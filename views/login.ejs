@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <%- include('partials/head') %>
+
+<body>
+    <%- include('partials/header') %>        
+
+<main class="main-del-login">
+    <h1 class="cara-log-in">iniciar secion</h1>
+
+    <form action="/" method="GET" class="login">
+        <div class="login-datos">
+            <label for="su nombre"></label>
+
+            <input type="text" name="" id="" placeholder="su nombre" class="datos-de-entrada" required>
+        </div>
+        <div class="login-datos">
+            <label for="contraseña"></label>
+
+            <input type="password" name="" id="" placeholder="su contraseña" class="datos-de-entrada" required>
+        </div>
+
+        <div class="botones-enviar-y-borrar">
+
+            
+            <div class="login-datos">
+               
+
+                <button type="submit" class="boton-del-login">enviar</button>
+            
+        </div>
+
+        </div>
+
+    </form>
+    <a href="/register" class="enlace-del-login">¿no tiene cuenta?</a>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<%- include('partials/footer') %>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+    <%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+    <main class="maind-del-register">
+    
+        <h1 class="register-cara">registrese</h1>
+        <form action="/" method="GET" class="form-del-register">
+            <div class="cosas-del-registro">
+                <label for="usuario"></label>
+                <input type="text" name="" id="usuario" placeholder="nombre y apellido" required>
+            </div>
+            <div class="cosas-del-registro">
+                <label for="su email"></label>
+    
+                <input type="email" name="" id="su email" placeholder="email" required>
+            </div>
+            <div class="cosas-del-registro">
+                <div class="titulo-del-register">
+                    <label for="su edad">su fecha de nacimiento</label>
+                </div>
+                <input type="data" name="" value="mm/dd/yyyy" required>
+            </div>
+            <div class="cosas-del-registro">
+                <label for="domicilio"></label>
+    
+                <input type="text" name="" id="domicilio" placeholder="domicilio" required>
+            </div>
+            <div class="cosas-del-registro">
+                <div class="titulo-del-register">
+                    <label for="compra venta">compra o vende</label>
+                </div>
+                <label for="compra Venta">
+                    <input type="radio" name="compraOVende" id="compra Venta"> vendo
+    
+    
+                </label>
+    
+                <label for="compra Venta">
+                    <input type="radio" name="compraOVende" id="compra Venta"> compro
+    
+    
+                </label>
+    
+            </div>
+            <div class="cosas-del-registro">
+                <div class="titulo-del-register">
+                    <label for="sus intereses">¿que le interesa?</label>
+                </div>
+                <div class="cosas-del-registro">
+                    <input type="checkbox" name="sus intereses" value="le gusta la Electro?"> Electro
+                </div>
+                <div class="cosas-del-registro">
+    
+                    <input type="checkbox" name="sus intereses" value="le gusta la moda?"> moda
+                </div>
+                <div class="cosas-del-registro">
+    
+                    <input type="checkbox" name="sus intereses" value="le gusta el hoga?"> hogar
+                </div>
+                <div class="cosas-del-registro">
+                    <input type="checkbox" name="sus intereses" value="le gusta la Juguetería?"> Juguetería
+                </div>
+                <div class="cosas-del-registro">
+                    <input type="checkbox" name="sus intereses" value="le gusta la Vida sana?"> Vida sana
+                </div>
+            </div>
+            <div class="cosas-del-registro">
+                <div class="titulo-del-register">
+                    <label for="imagen">su imagen</label>
+                </div>
+                <div class="cosas-del-registro">
+    
+                    <input type="file" name="" id="imagen">
+                </div>
+            </div>
+            <div class="cosas-del-registro">
+                <label for="contraseña"></label>
+    
+                <input type="password" name="" id="contraseña" placeholder="elija su contraseña" required>
+            </div>
+            <div class="cosas-del-registro">
+                <label for="confirme su contraseña"></label>
+    
+                <input type="password" name="" id="confirme su contraseña" placeholder="confirme su contraseña" required>
+            </div>
+            <div class="cosas-del-registro">
+                <div class="register-botones">
+                
+                    <div class="borrar-register">
+
+                <label for=""></label>
+                <button type="reset" class="boton-de-borrar">borrar</button>
+            </div>
+        
+            <div class="enviar-register">
+
+                <label for=""></label>
+                <button type="submit" class="boton-de-enviar">enviar</button>
+            </div>
+            </div>
+        </div>
+        
+    
+            <a href="/login" class="enlace-del-login">¿ya tiene cuenta?</a>
+        </form>
+    
+    </main>
+
+
+
+
+
+    <%- include('partials/footer') %>
+
+
+</body>
+</html>

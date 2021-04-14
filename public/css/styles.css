@@ -1,0 +1,498 @@
+
+     *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+     }
+      header{
+        background-color:#EAC926; 
+      }
+      .logo-y-barra{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        margin: 3px 5px;
+        width: 100%;
+
+      }
+      .product_img{
+        width: 100%;
+        max-width: 250px;
+    }
+     
+      
+      .compra{
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+      }
+      .barra-de-busqueda{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        
+
+      }
+      
+      footer{
+        background-color: white;
+        margin-top: 20px;
+        padding: 15px;
+      }
+      
+      
+      .fin-footer{
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+      }
+    
+      
+      .entrar{
+        display: none;
+      }
+ 
+ body{
+     font-family: Roboto ;
+     font-size: 12px;
+     background-color: #ebebeb;
+    
+     background-size: cover ;
+     padding: 10px;
+ }
+ .burger-menu{
+     color: white;
+     background-color:#03264C;
+     padding: 5px;
+     margin-left: 45%;
+     margin-right: 45%;
+ border-radius: 5px;
+ text-align: center;
+ display: block;
+ }
+ .titulares{
+ font-size: 24px;
+ }
+ .precio{
+     font-size: 18px;
+     flex: 2 1 30%;
+     align-items: center;
+ }
+ .oferta{
+     font-size:  16px;
+     color:#39b54a ;
+     flex: 2 1 70%;
+    align-items: flex-start;
+ }
+ div.mis-productos{
+   
+    display: flex;
+    background-color: white;
+    align-items: center;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+   flex: 1 1 auto
+ 
+}
+div.precio-con-oferta{
+  
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+
+}
+div.productos{
+ 
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  
+}
+ 
+ .menu{
+   display: flex;
+   display: none;
+   
+   
+ }
+ a{
+     text-decoration: none;
+     color: black;
+    
+ }
+ .descripcion{
+ font-size: 0px;
+ text-align: center;
+ background-color: white;
+ color: #666;
+ transition: all 360ms;
+ }
+
+main section article:hover h4.descripcion{
+  font-size: 16px;
+}
+.product_img{
+  transition: all 001ms;
+}
+main section article:hover img.product_img{
+  box-shadow: 0px 0px 10px rgb(100, 100, 100, );
+  
+}
+
+ .articulo{
+    background-color: white;
+     margin-bottom: 18px ;
+
+     
+     
+ }
+ div.parteDelFooter1{
+ color: #1259c3;
+     text-align: center;
+     transition: all 001ms;
+ 
+ }
+ footer section article:hover .parteDelFooter1 {
+   color: rgb(21, 231, 32)
+ }
+ div.parteDelFooter2{
+  color: #1259c3;
+      text-align: center;
+  
+  }
+  footer section article:hover .parteDelFooter2 {
+    color: rgb(130, 238, 211);
+  }
+  div.parteDelFooter3{
+    color: #053070;
+        text-align: center;
+    
+    }
+    footer section article:hover .parteDelFooter3 {
+      color: rgb(25, 0, 255)
+    }
+
+ 
+ 
+  
+
+main section article i{
+  display: block;
+  color: #39b54a;
+ line-height: 10px;
+ font-size: 2em;
+ width: 40px;
+ height: 40px; 
+ padding: 5px;
+ border-radius: 50%;
+ border: solid 1px #39b54a;
+ right: 20px;
+  top: -15px;
+   position: absolute;
+   box-sizing: border-box;
+   flex-wrap: wrap;
+ }
+ 
+ 
+ 
+ main{
+   background-size: cover;
+   padding: 12px ;
+   align-items: center;
+   text-align: center;
+   width: 90%;
+   margin: auto;
+   
+ }
+ 
+ 
+ 
+ css/ * {
+     box-sizing: border-box;
+   }
+   
+   /* Style the search field */
+   form.busqueda input[type=text] {
+     padding: 10px;
+     font-size: 12px;
+     border: 1px solid #666;
+     float: left;
+     width: 30vw;
+     background: white;
+    
+     
+   }
+   
+   /* Style the submit button */
+   form.busqueda button {
+    
+     float: left;
+     width: 5%;
+     padding: 10px;
+     background: white;
+     color: #03264C;
+     font-size: 12px;
+     border: 1px solid grey;
+     border-left: none; /* Prevent double borders */
+     cursor: pointer;
+     margin-left: 0%;
+   position: absolute;
+   }
+   
+   form.busqueda button:hover {
+     background: #0b7dda;
+   }
+   
+   /* Clear floats */
+   form.busqueda::after {
+     content: "";
+     clear: both;
+     display: table;
+   }
+   /* register*/
+   .form-del-register{
+
+    box-sizing: border-box;
+   }
+
+.cosas-del-registro{
+  text-align: center;
+ 
+
+  padding: 15px 10px;
+  align-items: center;
+  width: 50%;
+  margin:auto;
+  font-size: 13px;
+  
+   
+}
+div.titulo-del-register{
+font-size: 16px;
+font-weight:400 ;
+}
+.register-botones{
+   display: flex;
+  justify-content: space-between;
+
+}
+.boton-de-enviar{
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 5px;
+  margin:5px 5px;
+  transition: all 001ms;
+}
+
+
+.maind-del-register .form-del-register .cosas-del-registro .register-botones  .enviar-register:hover .boton-de-enviar {
+  color: white;
+ background-color:  #0022AA;
+}
+.boton-de-borrar{
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 5px;
+  margin:5px 5px;
+  transition: all 001ms;
+}
+.maind-del-register .form-del-register .cosas-del-registro .register-botones  .borrar-register:hover .boton-de-borrar {
+  background-color:  red;
+}
+
+.login{
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+  
+
+}
+div.login-datos{
+  margin-bottom: 10px;
+  display: block;
+padding: 5px 20px;
+}
+.datos-de-entrada{
+  width: 50%;
+  padding: 6px 6px;
+}
+.cara-log-in{
+  font-size: 40px;
+}
+.register-cara{
+  font-size: 40px;
+}
+
+.boton-del-login{
+  font-size: 17px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin:5px 5px;
+  transition: all 001ms;
+}
+.main-del-login .login .login-datos:hover .boton-del-login  {
+ background-color:  #0022AA;
+ color: white;
+}
+.botones-enviar-y-borrar{
+  
+  justify-content: space-around;
+  display:flex;
+  flex-flow: row;
+ 
+  
+}
+.ancho-botones{
+  width: 100px;
+}
+.boton-borrar-login{
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 5px;
+  transition: all 001ms;
+}
+.main-del-login .login .login-datos:hover  .boton-borrar-login{
+  background-color: red;
+}
+.enlace-del-login{
+  text-align: center;
+  color: blue;
+  align-items: center;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+   @media (min-width: 361px) { 
+     .top{
+       display: flex;
+       justify-content: space-around;
+     }
+     .compra{
+        max-width: 330px;
+        text-align: right;
+font-size: 12px;
+    }
+     body{  
+       box-shadow: 0px 0px 10px rgb( 100, 100, 100);
+      
+    }
+    .general-del-footer{
+      display: flex;
+      flex-flow: row;
+    }
+    .menu{
+      align-items: center;
+      display:block;
+      display: flex;
+      padding: 10px;
+      margin: auto;
+      justify-content: space-between;
+      width: 100%;
+   
+    }
+    
+      
+    
+    .menu ul{
+      display: flex;
+      
+    }
+    .menu li{
+margin: 0 5px;
+justify-content: space-between;
+    }
+    
+    .entrar{
+      display: block;
+    }
+    .burger-menu{
+      display: none;
+    }
+    div.mis-productos{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex: 2 1 auto;
+      flex-flow:row ;
+  }
+  
+    
+    
+
+   }
+   @media (min-width: 769px){
+     body{
+      box-shadow: 0px 0px 10px rgb( 100, 100, 100);
+     
+     }
+     footer{
+      
+       flex-wrap: wrap;
+       flex-flow: row;
+     }
+      
+      
+      
+      .entrar{
+        display: block;
+      }
+      .burger-menu{
+        display: none;
+      }
+  .compra{
+    max-width: 769px ;
+    margin: auto;
+  } 
+   .menu li{
+    margin: 0 10px;
+        }
+        .top{
+          align-items: center;
+
+        }
+        .menu a{
+         font-size: 16px;
+              }
+              .compra{
+                width: 30%;
+                max-width: none;
+               margin: 0;
+                font-weight: 400;
+              ;
+                font-size:  15px;
+
+              }
+              div.mis-productos{
+                flex: 4 1 auto;
+      flex-flow:row ;
+
+              }
+              .boton-del-login{
+                padding: 10px 200px;
+              }
+              .boton-de-borrar{
+    padding: 10px 150px;
+  }
+  .boton-de-enviar{
+    padding: 10px 150px;
+  }
+  
+              
+
+   }
+   
+   
