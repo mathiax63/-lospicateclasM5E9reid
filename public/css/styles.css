@@ -368,8 +368,24 @@ padding: 5px 20px;
   font-size: 16px;
 }
 
-
-
+.main-del-create{
+  font-size: 35px;
+  margin: auto;
+  padding:30px
+}
+.boton-del-create{
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 001ms;
+}
+.main-del-create .ultima-visita .form-del-create .field .control:hover .boton-del-create {
+  background-color:  #0022AA;
+  color: white;
+ }
+.field{
+  margin-top: 20px;
+}
 
 
 
