@@ -52,7 +52,7 @@ let productController = {
 // Se agrega el registro al array
         visitados.push(producto)
       
-        res.redirect('/')
+        res.redirect('products')
     },
 
 // FUnción que muestra el formulario de edición
@@ -140,7 +140,7 @@ let productController = {
 
 
     cart: (req, res) => {
-        res.render('products/cart');
+        res.render('productCreate');
     },
 
     search: (req, res) => {

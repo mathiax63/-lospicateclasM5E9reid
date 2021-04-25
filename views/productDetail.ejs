@@ -15,35 +15,31 @@
 
             <main>
                 <h3>Detalle de Producto</h3>
-                <section class="ultima-visita">
-                    <div class="articulo">
-                        <h1>
+                <section>
+                    <figure>
+                        <img src="/images/<%= product.image %>" alt="" class="product_img">
+                    </figure>
+                    <div>
+                        <div>
+                        <h3>
                             <%= product.name %>
-                        </h1>
-                        <h2>$ <%= product.price %>
-                        </h2>
+                        </h3>
+                        <h3>$ <%= product.price %>
+                        </h3>
                         <p>
-                            <%= product.descuento %>
+                           % <%= product.descuento %>
                         </p>
-                        <figure class="image">
-                            <img src="/images/<%= product.image %>" alt="" class="product_img">
-                        </figure>
-                      
-                        <a href="/products/<%= product.id %>/edit" class="button is-success">Editar</a>
-
-                        <form class="form is-inline" action="/products/<%= product.id %>?_method=DELETE" method="POST">
-                            <button type="submit" class="button is-danger">Borrar</button>
-                        </form>
-
                     </div>
-
-
+                      
+                        <a href="/products/<%= product.id %>/edit" >Editar</a>
+        
+                        <form action="/products/<%= product.id %>?_method=DELETE" method="POST">
+                            <button type="submit" >Borrar</button>
+                        </form>
+                    </div>
+        
                 </section>
-
-
-
-
-
+        
             </main>
             <%- include('partials/footer') %>
 

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html  lang = " en " >
+<% -  include ( ' parciales / cabeza ' ) %>
+<cuerpo >
+
+    <% -  include ( ' parciales / encabezado ' ) %>
+
+    <main  class = " crear " >
+        <h1 > Productos </h1 >
+        <% de  productos . forEach ( producto  => { % >
+            < p >
+                <% =  producto . Identificación del  % >  -  < a href = " / products / <% = product.id%> " > < % =  producto . nombre  % > < / a >
+            </ p >
+        <% }); %>
+    </ main >
+</ cuerpo >
+</ html >
