@@ -29,14 +29,12 @@ app.use("/products", productRouter)
 // app.use("/", userRouter);
 
 
+app.use((req, res, next) => {
+    res.status(404).render('not-found');
+    next();
+})
  
 app.listen(puerto || 3000, function() {
     console.log("Servidor corriendo en el puerto 3000");
 });
 
-app.get("/login", (req, res) => {
-    res.render("login" )
-} )
-app.get("/register", (req, res) => {
-    res.render ("register" )
-} )

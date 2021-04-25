@@ -8,35 +8,37 @@
         <%- include('partials/header') %>
 
 
-            <section class="banner">
-                <img src="/images/img-home-banner.jpg" alt="Banner de ofertas">
-            </section>
+            
+      <section>
+        <img src="/images/img-home-banner.jpg" width=100% alt="Banner de ofertas">
+    </section>
 
 
-            <main>
+            <main class="main-del-detail">
                 <h3>Detalle de Producto</h3>
-                <section>
+                <section class="articulo-del-detail">
                     <figure>
                         <img src="/images/<%= product.image %>" alt="" class="product_img">
                     </figure>
-                    <div>
+                    <div class="datos-del-detail">
                         <div>
                         <h3>
                             <%= product.name %>
                         </h3>
-                        <h3>$ <%= product.price %>
+                        <h3 class="precio-del-detail">$ <%= product.price %>
                         </h3>
-                        <p>
-                           % <%= product.descuento %>
+                        <p class="descuento-del-detail">
+                           <%= product.descuento %> %off
                         </p>
                     </div>
-                      
-                        <a href="/products/<%= product.id %>/edit" >Editar</a>
+                      <div class="botones-del-edit">
+                        <a class="a-del-detail"href="/products/<%= product.id %>/edit" >Editar</a>
         
-                        <form action="/products/<%= product.id %>?_method=DELETE" method="POST">
-                            <button type="submit" >Borrar</button>
+                        <form class="boton-del-form-ditail" action="/products/<%= product.id %>?_method=DELETE" method="POST">
+                            <button class="boton-del-detail" type="submit" >Borrar</button>
                         </form>
                     </div>
+                </div>
         
                 </section>
         

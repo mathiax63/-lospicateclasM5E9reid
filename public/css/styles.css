@@ -386,6 +386,98 @@ padding: 5px 20px;
 .field{
   margin-top: 20px;
 }
+.main-del-delate{
+font-size: 30px;
+}
+.section-del-delate{
+  margin: auto;
+  padding: 30px;
+}
+
+
+
+/* empiza el detail*/
+
+
+
+.main-del-detail{
+  font-size: 20px;
+  margin-top: 30px;
+}
+.precio-del-detail{
+  margin: 20px;
+}
+.boton-del-detail{
+  border: none;
+  font-size: 17px;
+  transition: all 001ms;
+}
+.a-del-detail{
+  border: solid 1px black;
+  
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: all 001ms;
+}
+.botones-del-edit{
+  margin-top: 40px;
+}
+.main-del-detail .articulo-del-detail .datos-del-detail .botones-del-edit:hover .a-del-detail{
+  background-color:  #0022AA;
+  color: white;
+}
+.main-del-detail .articulo-del-detail .datos-del-detail .botones-del-edit:hover .boton-del-form-ditail{
+  background-color:  red;
+  
+}
+.main-del-detail .articulo-del-detail .datos-del-detail .botones-del-edit .boton-del-form-ditail:hover .boton-del-detail{
+  background-color:  red;
+}
+
+.boton-del-form-ditail{
+  
+  margin-top: 20px;
+  border: solid 1px black;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: all 001ms;
+}
+
+.descuento-del-detail{
+  color: #39b54a;
+}
+/*empieza el edit*/
+
+
+.main-del-edit{
+  font-size: 20px;
+  margin: auto;
+}
+
+.boton-de-edit{
+
+  margin-top: 20px;
+  border: solid 1px black;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: all 001ms;
+}
+.control{
+  margin-top: 30px;
+}
+
+.main-del-edit .ultima-visita .fomr-del-edit .field .control:hover .boton-de-edit{
+  background-color:  #0022AA;
+  color: white;
+}
+
+
+
+
+
 
 
 
@@ -446,7 +538,7 @@ justify-content: space-between;
       flex-flow:row ;
   }
   
-    
+  
     
 
    }
@@ -508,7 +600,19 @@ justify-content: space-between;
   }
   
               
-
+  .botones-del-edit{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+  }
+  .boton-del-form-ditail{
+  padding: 10px 150px;
    }
+   .a-del-detail{
+    padding: 10px 150px;
+   }
+  }
    
    

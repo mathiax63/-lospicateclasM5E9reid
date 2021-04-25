@@ -8,16 +8,17 @@
         <%- include('partials/header') %>
 
 
-            <section class="banner">
-                <img src="/images/img-home-banner.jpg" alt="Banner de ofertas">
-            </section>
+            
+      <section>
+        <img src="/images/img-home-banner.jpg" width=100% alt="Banner de ofertas">
+    </section>
 
 
-            <main>
-                <h3>Edición de Producto</h3>
+            <main class="main-del-edit">
+                <h1>Edición de Producto</h1>
                 <section class="ultima-visita">
 
-                    <form action="/products/<%=  product.id %>?_method=PUT" method="POST">
+                    <form class="fomr-del-edit" action="/products/<%=  product.id %>?_method=PUT" method="POST">
 
                         <div class="field">
                             <label for="name">Nombre</label>
@@ -57,7 +58,7 @@
 
                         <div class="field">
                             <div class="control">
-                                <button type="submit">Editar producto</button>
+                                <button class="boton-de-edit" type="submit">Editar producto</button>
                             </div>
                         </div>
                     </form>

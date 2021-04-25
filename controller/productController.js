@@ -52,7 +52,7 @@ let productController = {
 // Se agrega el registro al array
         visitados.push(producto)
       
-        res.redirect('products')
+        res.redirect('/')
     },
 
 // FUnción que muestra el formulario de edición
@@ -135,7 +135,7 @@ let productController = {
 // Se observa que el eliminado no pertenece al array     
         console.log(visitados)
  // Ahora se mostrará todo porque los productos los varga de un archivo       
-        res.redirect('productDelate')
+        res.redirect('/')
     },
 
 
