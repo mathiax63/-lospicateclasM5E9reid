@@ -29,4 +29,3 @@ let visitados =
             image: "img-tv-samsung-smart.jpg"
         }
     ]
-module.exports = visitados
