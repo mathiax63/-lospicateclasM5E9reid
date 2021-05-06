@@ -24,8 +24,17 @@
                             <label for="name">Nombre</label>
                             <div class="control">
 
-                                <input type="text" name="name" value="<%= product.name %>">
+                                <input type="text" name="name" value="<%= locals.camposDevueltos ? camposDevueltos.name  : product.name %>">
+
+                                <% if(locals.errors && errors.name){ %>
+                                    <div><%= errors.name.msg %></div>
+                                <% } %>
+
                             </div>
+                           
+
+                           
+                            
 
                         </div>
 

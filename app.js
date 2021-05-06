@@ -3,6 +3,8 @@ const { dirname } = require('path');
 const app = express()
 const puerto = process.env.PORT
 
+const logMiddleware = require('./middlewares/logMidelware')
+
 const methodOverride = require("method-override")
 
 
@@ -17,7 +19,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({extended: false}))
 app.use(methodOverride("_method"))
-
+app.use(logMiddleware)
 /*app.get('/', (req, res) => {
     res.render("home");
 });*/

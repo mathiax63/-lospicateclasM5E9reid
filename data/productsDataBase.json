@@ -1,8 +1,7 @@
 [
  {
-  "name": "Cafetera Moulinex Dolce Gusto Edited",
+  "name": "",
   "image": "img-cafetera-moulinex.jpg",
-  "oldImage": "img-cafetera-moulinex.jpg",
   "price": "10000",
   "discount": "5",
   "id": "1"
@@ -24,22 +23,19 @@
   "id": "3"
  },
  {
-  "id": 6,
   "name": "Aire Acondicionado 3200w Frio / Calor",
-  "description": "AIRE SPLIT 3200W TACA-3200WCHSA/KC FC TCL. Capacidad frio 3200 Watts. Capacidad calor 3300 Watts. Potencia Electrica(W)frio 996. Potencia Electrica(W)calor 1028. Eficiencia energética calor C. Eficiencia energética frio A. Frigorias 2750 UNIDAD INTERIOR. Peso Bruto 10kg. Peso Neto 7 kg",
-  "price": 20999,
-  "discount": 12,
-  "image": "img-aire-acondicionado.jpg",
-  "category": "in-sale"
+  "image": "",
+  "price": "42000",
+  "discount": "12",
+  "id": "6"
  },
  {
-  "id": 7,
   "name": "Notebook Lenovo I3 Intel 8gb Ram",
-  "description": "PROCESADOR / CHIPSET. CPU: Intel Core i3(8a generación) 8130U / 2.2 GHz. Velocidad turbo máxima: 3, 4 GHz. Numero de núcleos: Doble núcleo. Cache: 4 MB. Arquitectura de 64 bit: ss. MEMORIA CACHÉ. Tamaño instalada: 4 MB. ALMACENAMIENTO. Interfaz Serial ATA - 600",
-  "price": 36700,
-  "discount": 5,
   "image": "img-laptop-lenovo.jpg",
-  "category": "in-sale"
+  "oldImage": "img-laptop-lenovo.jpg",
+  "price": "36700",
+  "discount": "5",
+  "id": "7"
  },
  {
   "id": 8,
@@ -115,13 +111,6 @@
   "category": "in-sale",
   "description": "Deja que la música dance cobre vida con EXTRA BASS™ Anima el ambiente con EXTRA BASS™1. Un radiador pasivo trabaja con el parlante monoaural para potenciar los tonos bajos y mejorar los graves, a pesar del tamaño compacto. ",
   "image": "img-parlante-sony.jpg"
- },
- {
-  "name": "54",
-  "image": "",
-  "price": "45",
-  "discount": "54",
-  "id": 17
  },
  {
   "id": "4",

@@ -2,6 +2,7 @@
 //de esta forma no ahi que tocar la data desde el controler
 const archivoModel = require("../models/productsModel")
 const productModel = archivoModel('productsDataBase');
+const { validationResult } = require('express-validator');
 
 let productController = {
 
@@ -38,9 +39,17 @@ let productController = {
 store: (req, res) => {
     console.log('Entre a store')
     console.log(req.files);
+    
+    console.log('-----Verifico si hay errores');
+    const errores = validationResult(req);
+    // Esta instrucción muestra todo el array
+    console.log(errores);
+    if (errores.errors.length > 0) {
+        return res.render("productCreate", {
+            erroresControlados: errores.mapped(),
+            camposDevueltos: req.body
 
-
-
+        })};
  // Atrapo los contenido del formulario
     const product = req.body;
 
@@ -55,6 +64,7 @@ store: (req, res) => {
 productModel.create(product);
 
     res.redirect('/')
+
 },
 
 // FUnción que muestra el formulario de edición
@@ -71,6 +81,7 @@ productModel.create(product);
         }
     },
 
+
 // Función que realiza cambios en el producto seleccionado
 update: (req, res) => {
     console.log("Entré al update")
@@ -85,16 +96,36 @@ update: (req, res) => {
 
  
       product.image = req.file ? req.file.filename : req.body.oldImagen;
+      const errores = validationResult(req);
+      let newProductValues = req.body;
+      newProductValues.id = req.params.id;
+
+      if (errores.errors.length > 0) {
+        return res.render('productEdit', {
+            erroresControlados: errores.mapped(),
+            camposDevueltos: req.body
+
+        });
+    }
+
     
       if (req.body.image===undefined) {
         product.image = product.oldImage
+    } else {
+        // Actualizaron la foto, saco su nombre del proceso
+        product.image = req.file.filename 
     }
+    delete product.oldImage;
+
+    product.id = req.params.id;
     
       console.log('.......MOSTRA LA IMAGEN.......')
     console.log(product.image)
     console.log(product)
    
-   
+    
+
+    delete product.oldImage;
   // Elimino de la estructura auxiliar, porque no existe en Json 
     
 
