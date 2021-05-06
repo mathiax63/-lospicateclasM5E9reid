@@ -17,8 +17,33 @@
             <main class="main-del-edit">
                 <h1>Edición de Producto</h1>
                 <section class="ultima-visita">
+                    <form class="fomr-del-edit"
+                   
 
-                    <form class="fomr-del-edit" action="/products/<%=  product.id %>?_method=PUT" method="POST">
+                    <% if ( locals.product && product.id ) { %>
+                      action="/products/<%= locals.product && product.id %>?_method=PUT"   method="POST" enctype="multipart/form-data">
+                      <p>
+                          <%= product.id %>
+                       
+                      </p>
+                    
+                      <% } %>
+
+
+                        <% if (locals. erroresEncontrados ) { %>
+
+
+
+                            <% for( let i in  erroresEncontrados ) { %>
+
+                                <p>
+                                    <%=  erroresEncontrados[i].msg %>
+                                </p>
+
+                                <% } %>
+
+
+                                    <% } %>
 
                         <div class="field">
                             <label for="name">Nombre</label>
@@ -26,8 +51,8 @@
 
                                 <input type="text" name="name" value="<%= locals.camposDevueltos ? camposDevueltos.name  : product.name %>">
 
-                                <% if(locals.errors && errors.name){ %>
-                                    <div><%= errors.name.msg %></div>
+                                <% if(locals.erroresEncontrados &&  erroresEncontrados.name){ %>
+                                    <div><%=  erroresEncontrados.name.msg %></div>
                                 <% } %>
 
                             </div>
@@ -42,24 +67,39 @@
                         <div class="field">
                             <label for="image">Imagen</label>
                             <div class="control">
-                                <input type="file" name="image" value="<%= product.image %>" class="product_img">
-                                <input type="hidden" name="oldImage" value="<%= product.image %>">
+                                <input type="file" name="image"  class="product_img">
+                                <input type="hidden" name="oldImage" value="<%= locals.product ? product.image : '0' %>">
                             </div>
                         </div>
 
                         <div class="field">
                             <label for="price">Precio</label>
                             <div class="control">
-                                <input type="text" name="price" value="<%= product.price %>">
+                                <input type="text" name="price" value="<%= locals.camposDevueltos ? camposDevueltos.price  : product.price %>">
+
+                                <% if (locals.erroresEncontrados && erroresEncontrados.price) { %>
+                                    <p>
+                                        <%=  erroresEncontrados.price.msg %>
+                                    </p>
+                                    <% } %>
                             </div>
                         </div>
+
+
 
                         <div class="field">
                             <label for="discount">descuento</label>
                             <div class="control">
 
-                                <input type="text" name="discount" value="<%= product.discount  %>">
+                                <input type="text" name="discount" value="<%= locals.camposDevueltos ? camposDevueltos.discount : product.discount %>">
+
+                                <% if (locals.erroresEncontrados &&  erroresEncontrados.discount) { %>
+                                    <p>
+                                        <%=  erroresEncontrados.discount.msg %>
+                                    </p>
+                                    <% } %>
                             </div>
+                            
                         </div>
 
 

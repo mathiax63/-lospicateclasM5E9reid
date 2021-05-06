@@ -46,7 +46,7 @@ store: (req, res) => {
     console.log(errores);
     if (errores.errors.length > 0) {
         return res.render("productCreate", {
-            erroresControlados: errores.mapped(),
+            erroresEncontrados: errores.mapped(),
             camposDevueltos: req.body
 
         })};
@@ -102,7 +102,7 @@ update: (req, res) => {
 
       if (errores.errors.length > 0) {
         return res.render('productEdit', {
-            erroresControlados: errores.mapped(),
+            erroresEncontrados: errores.mapped(),
             camposDevueltos: req.body
 
         });

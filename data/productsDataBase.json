@@ -1,10 +1,10 @@
 [
  {
-  "name": "",
-  "image": "img-cafetera-moulinex.jpg",
+  "name": "batidora",
   "price": "10000",
-  "discount": "5",
-  "id": "1"
+  "discount": "12",
+  "id": "1",
+  "image": "img-cafetera-moulinex.jpg"
  },
  {
   "name": "Macbook Pro 2022",
@@ -24,18 +24,17 @@
  },
  {
   "name": "Aire Acondicionado 3200w Frio / Calor",
-  "image": "",
   "price": "42000",
   "discount": "12",
-  "id": "6"
+  "id": "6",
+  "image": "img-1620325798294.jpg"
  },
  {
   "name": "Notebook Lenovo I3 Intel 8gb Ram",
-  "image": "img-laptop-lenovo.jpg",
-  "oldImage": "img-laptop-lenovo.jpg",
   "price": "36700",
-  "discount": "5",
-  "id": "7"
+  "discount": "13",
+  "id": "7",
+  "image": "img-1620325829602.jpg"
  },
  {
   "id": 8,
@@ -104,13 +103,11 @@
   "category": "visited"
  },
  {
-  "id": 16,
   "name": "Sony Srs-xb12 Parlante Bluetooth Portátil",
-  "price": 4699,
-  "discount": 5,
-  "category": "in-sale",
-  "description": "Deja que la música dance cobre vida con EXTRA BASS™ Anima el ambiente con EXTRA BASS™1. Un radiador pasivo trabaja con el parlante monoaural para potenciar los tonos bajos y mejorar los graves, a pesar del tamaño compacto. ",
-  "image": "img-parlante-sony.jpg"
+  "price": "6000",
+  "discount": "5",
+  "id": "16",
+  "image": "img-1620326252189.jpg"
  },
  {
   "id": "4",

@@ -49,7 +49,7 @@ const validacionesEdit = [
     .isString().withMessage('Deber ser un String'),
 
     body('price').notEmpty().withMessage('En precio no puede estar en blanco'),
-    body('descuento').notEmpty().withMessage('En descuento no puede estar en blanco')
+    body('discount').notEmpty().withMessage('En descuento no puede estar en blanco')
   
 ] 
 
@@ -91,7 +91,7 @@ router.get('/:id/edit',validacionesEdit, productsController.edit);
 router.post('/store' ,upload.single('image'),validaciones, productsController.store);
 
 
-router.put('/:id', upload.single('image'), productsController.update);
+router.put('/:id', upload.single('image'),validacionesEdit, productsController.update);
 
 
 router.delete('/:id', productsController.destroy);
